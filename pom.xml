@@ -3,7 +3,8 @@
 	<groupId>net.frontlinesms.core</groupId>
 	<artifactId>aga-frontline-desktop</artifactId>
 	<name>FrontlineSMS Desktop build</name>
-	<version>0.00.01</version>
+	<!-- TODO it is the version of THIS project which should be changing for releases rather than the FrontlineSMS core project -->
+	<version>0.00.02</version>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
   
 	<licenses>
@@ -92,7 +93,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-forms</artifactId>
-			<version>0.02.01</version>
+			<version>0.02.02</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
