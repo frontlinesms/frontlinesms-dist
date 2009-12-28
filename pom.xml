@@ -86,7 +86,10 @@
 					<javaApplicationStub>${basedir}/src/assemble/osx-resources/JavaApplicationStub</javaApplicationStub>
 					<additionalResources>
 						<fileSet>
-							<directory>${basedir}/help</directory>
+							<directory>${basedir}</directory>
+							<includes>
+								<include>help/**</include>
+							</includes>
 						</fileSet>
 					</additionalResources>
 				</configuration>
