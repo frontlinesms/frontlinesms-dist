@@ -1,12 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.frontlinesms.core</groupId>
 	<artifactId>aga-frontline-desktop</artifactId>
 	<name>FrontlineSMS Desktop build</name>
-	<!-- TODO it is the version of THIS project which should be changing for releases rather than the FrontlineSMS core project -->
+	<!--
+		TODO it is the version of THIS project which should be changing for
+		releases rather than the FrontlineSMS core project
+	-->
 	<version>0.00.02-SNAPSHOT</version>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
-  
+
 	<licenses>
 		<license>
 			<name>GNU Lesser General Public License v3 or later</name>
@@ -33,7 +37,7 @@
 			</comments>
 		</license>
 	</licenses>
-	
+
 	<repositories>
 		<repository>
 			<id>cleone.net.repo</id>
@@ -45,7 +49,7 @@
 			<url>https://maven-repository.dev.java.net/repository</url>
 		</repository>
 	</repositories>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>cleone.net.repo</id>
@@ -53,7 +57,7 @@
 			<url>ftp://m2repo.cleone.net</url>
 		</repository>
 	</distributionManagement>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -71,8 +75,32 @@
 					</descriptors>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>osxappbundle-maven-plugin</artifactId>
+				<version>1.0-alpha-2</version>
+				<configuration>
+					<mainClass>net.frontlinesms.DesktopLauncher</mainClass>
+					<iconFile>${basedir}/src/assemble/osx-resources/FrontlineSMS.icns</iconFile>
+					<jvmVersion>1.5+</jvmVersion>
+					<javaApplicationStub>${basedir}/src/assemble/osx-resources/JavaApplicationStub</javaApplicationStub>
+					<additionalResources>
+						<fileSet>
+							<directory>${basedir}/help</directory>
+						</fileSet>
+					</additionalResources>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>bundle</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
-		
+
 		<extensions>
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
@@ -88,7 +116,7 @@
 			<artifactId>frontlinesms</artifactId>
 			<version>1.6.08-SNAPSHOT</version>
 		</dependency>
-		
+
 		<!-- Plugins -->
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
