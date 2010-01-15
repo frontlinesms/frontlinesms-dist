@@ -97,6 +97,7 @@
 					<iconFile>${basedir}/src/assemble/osx-resources/FrontlineSMS.icns</iconFile>
 					<jvmVersion>1.5+</jvmVersion>
 					<javaApplicationStub>${basedir}/src/assemble/osx-resources/JavaApplicationStub</javaApplicationStub>
+					<workingDirectory>$JAVAROOT/lib</workingDirectory>
 					<additionalResources>
 						<fileSet>
 							<directory>${basedir}</directory>
