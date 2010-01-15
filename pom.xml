@@ -46,7 +46,7 @@
 		</repository>
 		<repository>
 			<id>maven-repository.dev.java.net</id>
-			<url>https://maven-repository.dev.java.net/repository</url>
+			<url>http://download.java.net/maven/2</url>
 		</repository>
 	</repositories>
 
@@ -74,11 +74,19 @@
 						<descriptor>src/assemble/distribution.xml</descriptor>
 					</descriptors>
 				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>osxappbundle-maven-plugin</artifactId>
-				<version>1.0-alpha-2</version>
+				<version>1.0-alpha-2-aga-SNAPSHOT</version>
 				<configuration>
 					<mainClass>net.frontlinesms.DesktopLauncher</mainClass>
 					<iconFile>${basedir}/src/assemble/osx-resources/FrontlineSMS.icns</iconFile>
@@ -92,6 +100,17 @@
 							</includes>
 						</fileSet>
 					</additionalResources>
+					<additionalBundledClasspathResources>
+						<fileSet>
+							<directory>${basedir}/src/assemble/osx-resources</directory>
+							<includes>
+								<include>*.jnilib</include>
+							</includes>
+						</fileSet>
+						<fileSet>
+							<directory>${basedir}/src/assemble/resources/lib</directory>
+						</fileSet>
+					</additionalBundledClasspathResources>
 				</configuration>
 				<executions>
 					<execution>
@@ -120,7 +139,7 @@
 			<version>1.6.08-SNAPSHOT</version>
 		</dependency>
 
-		<!-- Plugins -->
+		<!-- FrontlineSMS Plugins -->
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-forms</artifactId>
