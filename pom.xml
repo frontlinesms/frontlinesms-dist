@@ -73,6 +73,9 @@
 					<descriptors>
 						<descriptor>src/assemble/distribution.xml</descriptor>
 						
+						<!-- Windows build for JET compilation -->
+						<descriptor>src/assemble/windows-jet.xml</descriptor>
+						
 						<!-- Linux builds -->
 						<descriptor>src/assemble/linux_i686-dist.xml</descriptor>
 						<descriptor>src/assemble/linux_ia64-dist.xml</descriptor>
@@ -89,6 +92,9 @@
 				</executions>
 			</plugin>
 			<plugin>
+				<!-- THIS PLUGIN IS PLATFORM-DEPENDENT 
+					This will create the FrontlineSMS.app bundle regardless of the platform used.
+					This will ONLY create the Mac distributable disk image (.dmg file) when run on OS X. -->
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>osxappbundle-maven-plugin</artifactId>
 				<version>1.0-alpha-2-aga-SNAPSHOT</version>
