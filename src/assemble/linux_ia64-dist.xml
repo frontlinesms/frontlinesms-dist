@@ -2,7 +2,7 @@
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/assembly-1.0.0.xsd">
 		
-	<id>linux_i686-dist</id>
+	<id>linux_ia64-dist</id>
 	<formats>
 		<format>zip</format>
 	</formats>
@@ -48,7 +48,7 @@
 		
 		<fileSet>
 			<!-- Include JNI Libraries for Linux -->
-			<directory>lib/linux/i686</directory> <!-- TODO make arch version a property injected here -->
+			<directory>lib/linux/ia64</directory> <!-- TODO make arch version a property injected here -->
 			<outputDirectory></outputDirectory>
 			<includes>
 				<include>*.so</include>

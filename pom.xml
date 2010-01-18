@@ -75,8 +75,8 @@
 						
 						<!-- Linux builds -->
 						<descriptor>src/assemble/linux_i686-dist.xml</descriptor>
-						<!-- <descriptor>src/assemble/linux_ia64-dist.xml</descriptor>
-						<descriptor>src/assemble/linux_x86_64-dist.xml</descriptor> -->
+						<descriptor>src/assemble/linux_ia64-dist.xml</descriptor>
+						<descriptor>src/assemble/linux_x86_64-dist.xml</descriptor>
 					</descriptors>
 				</configuration>
 				<executions>
