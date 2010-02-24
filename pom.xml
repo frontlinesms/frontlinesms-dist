@@ -95,9 +95,9 @@
 				<!-- THIS PLUGIN IS PLATFORM-DEPENDENT 
 					This will create the FrontlineSMS.app bundle regardless of the platform used.
 					This will ONLY create the Mac distributable disk image (.dmg file) when run on OS X. -->
-				<groupId>org.codehaus.mojo</groupId>
+				<groupId>net.frontlinesms.build</groupId>
 				<artifactId>osxappbundle-maven-plugin</artifactId>
-				<version>1.0-alpha-2-aga-SNAPSHOT</version>
+				<version>1.0</version>
 				<configuration>
 					<mainClass>net.frontlinesms.DesktopLauncher</mainClass>
 					<iconFile>${basedir}/src/assemble/osx-resources/FrontlineSMS.icns</iconFile>
