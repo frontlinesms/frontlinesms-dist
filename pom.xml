@@ -114,9 +114,9 @@
 					<workingDirectory>$JAVAROOT/lib</workingDirectory>
 					<additionalResources>
 						<fileSet>
-							<directory>${basedir}</directory>
+							<directory>${basedir}/src/assemble/resources/package</directory>
 							<includes>
-								<include>help/**</include>
+								<include>**</include>
 							</includes>
 						</fileSet>
 					</additionalResources>
@@ -137,6 +137,52 @@
 						<phase>package</phase>
 						<goals>
 							<goal>bundle</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<!-- THIS PLUGIN IS PLATFORM-DEPENDENT
+					This will create the FrontlineSMS Windows install package, but will only work
+					if the OS is Windows and Excelsior Jet compiler and packager are installed -->
+				<groupId>net.frontlinesms.build</groupId>
+				<artifactId>jetpackager-maven-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<configuration>
+					<splashImage>src/assemble/resources/FrontlineSMS_Splash_Logo.jpg</splashImage>
+					<programIcon>src/assemble/resources/FrontlineSMS.ico</programIcon>
+					<javaMainClass>net.frontlinesms.DesktopLauncher</javaMainClass>
+					<programExecutableName>FrontlineSMS</programExecutableName>
+					<programVendor>kiwanja.net</programVendor>
+					<packageContents>
+						<fileSet>
+							<!-- Include the help directory + all contents and subdirs -->
+							<directory>src/assemble/resources/package/</directory>
+							<includes>
+								<include>**</include>
+							</includes>
+						</fileSet>
+						<fileSet>
+							<!-- Include JNI Libraries for Windows -->
+							<directory>lib/windows</directory>
+							<includes>
+								<include>*.dll</include>
+							</includes>
+							<excludes>
+								<exclude>rxtx*.dll</exclude>
+							</excludes>
+						</fileSet>
+					</packageContents>
+					<programFilesHome>kiwanja.net/FrontlineSMS_${version}</programFilesHome>
+					<startMenuProgramFolderRoot>FrontlineSMS</startMenuProgramFolderRoot>
+					<doCompile>false</doCompile>
+					<!--<doPack>false</doPack>-->
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jetbuild</goal>
 						</goals>
 					</execution>
 				</executions>

@@ -37,12 +37,13 @@
 			<excludes>
 				<exclude>FrontlineSMS.bat</exclude>
 				<exclude>FrontlineSMS.sh</exclude>
+				<exclude>package/</exclude>
 			</excludes>
 		</fileSet>
 		
 		<fileSet>
 			<!-- Include the help directory + all contents and subdirs -->
-			<directory>help/</directory>
+			<directory>src/assemble/resources/package/help/</directory>
 			<outputDirectory>help/</outputDirectory>
 		</fileSet>
 		
