@@ -175,7 +175,7 @@
 					</packageContents>
 					<programFilesHome>kiwanja.net/FrontlineSMS_${version}</programFilesHome>
 					<startMenuProgramFolderRoot>FrontlineSMS</startMenuProgramFolderRoot>
-					<doCompile>false</doCompile>
+					<!--<doCompile>false</doCompile>-->
 					<!--<doPack>false</doPack>-->
 				</configuration>
 				<executions>
