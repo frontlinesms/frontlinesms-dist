@@ -176,6 +176,7 @@
 					</packageContents>
 					<programFilesHome>kiwanja.net/FrontlineSMS_${version}</programFilesHome>
 					<startMenuProgramFolderRoot>FrontlineSMS</startMenuProgramFolderRoot>
+					<compressionLevel>2</compressionLevel>
 					<!--<doCompile>false</doCompile>-->
 					<!--<doPack>false</doPack>-->
 				</configuration>
