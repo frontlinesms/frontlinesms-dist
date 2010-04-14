@@ -117,6 +117,7 @@
 				<artifactId>osxappbundle-maven-plugin</artifactId>
 				<version>1.0</version>
 				<configuration>
+					<bundleName>FrontlineSMS ${version}</bundleName>
 					<mainClass>net.frontlinesms.DesktopLauncher</mainClass>
 					<iconFile>${basedir}/src/assemble/osx-resources/FrontlineSMS.icns</iconFile>
 					<jvmVersion>1.5+</jvmVersion>
