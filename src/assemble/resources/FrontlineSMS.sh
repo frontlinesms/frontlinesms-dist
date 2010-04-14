@@ -3,7 +3,8 @@
 #
 # Author: Emmanuel Kala <emkala@gmail.com>, Alex Anderson <alex@frontlinesms.com>
 
-echo "Launching FrontlineSMS..."
+echo "Launching FrontlineSMS."
+echo "Please wait..."
 
 # Change to the directory hosting this script
 cd `dirname $0`
@@ -21,5 +22,7 @@ buildClasspath() {
 buildClasspath "lib"
 buildClasspath "cp"
 
-# Launch the application
-java -classpath $CLASSPATH net.frontlinesms.DesktopLauncher
+# Launch the application using the classpath variable we set above, and setting the
+# system property java.library.path to the current directory to allow the bundled
+# JNI libs to be loaded without needing to be moved to another directory.
+java -Djava.library.path=. -classpath $CLASSPATH net.frontlinesms.DesktopLauncher
