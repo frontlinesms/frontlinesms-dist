@@ -157,7 +157,7 @@
 					if the OS is Windows and Excelsior Jet compiler and packager are installed -->
 				<groupId>net.frontlinesms.build</groupId>
 				<artifactId>jetpackager-maven-plugin</artifactId>
-				<version>0.0.2-SNAPSHOT</version>
+				<version>0.0.2</version>
 				<configuration>
 					<splashImage>src/assemble/resources/FrontlineSMS_Splash_Logo.jpg</splashImage>
 					<programIcon>src/assemble/resources/FrontlineSMS.ico</programIcon>
