@@ -142,7 +142,7 @@
 						</fileSet>
 					</additionalBundledClasspathResources>
 				</configuration>
-				<executions>
+				<!--<executions>
 					<execution>
 						<phase>package</phase>
 						<goals>
@@ -150,7 +150,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			--></plugin>
 			<plugin>
 				<!-- THIS PLUGIN IS PLATFORM-DEPENDENT
 					This will create the FrontlineSMS Windows install package, but will only work
@@ -189,7 +189,7 @@
 					<!--<doCompile>false</doCompile>-->
 					<!--<doPack>false</doPack>-->
 				</configuration>
-				<executions>
+				<!--<executions>
 					<execution>
 						<phase>package</phase>
 						<goals>
@@ -197,7 +197,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			--></plugin>
 		</plugins>
 
 		<extensions>
