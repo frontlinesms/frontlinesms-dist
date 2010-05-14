@@ -225,7 +225,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-httptrigger</artifactId>
-			<version>0.01.04</version>
+			<version>0.01.05</version>
 		</dependency>
 	</dependencies>
 </project>
