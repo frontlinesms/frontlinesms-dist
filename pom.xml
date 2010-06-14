@@ -40,7 +40,7 @@
 	<scm>
 	
 		<connection>scm:git://frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist.git</connection>
-		<developerConnection>scm:git:ssh://morganbelkadi,frontlinesms@frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist</developerConnection>
+		<developerConnection>scm:git:ssh://${sourceforge.username}@frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist</developerConnection>
 	</scm>
 
 	<repositories>
