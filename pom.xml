@@ -213,7 +213,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-			<version>1.6.12</version>
+			<version>1.6.15-SNAPSHOT</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
@@ -226,6 +226,12 @@
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-httptrigger</artifactId>
 			<version>0.01.06</version>
+		</dependency>
+		<dependency>
+			<groupId>net.frontlinesms.plugins</groupId>
+			<artifactId>frontlinesms-plugin-translation</artifactId>
+			<version>0.00.04</version>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
