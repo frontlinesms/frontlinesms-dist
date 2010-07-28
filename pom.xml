@@ -7,7 +7,7 @@
 		TODO it is the version of THIS project which should be changing for
 		releases rather than the FrontlineSMS core project
 	-->
-	<version>1.6.14</version>
+	<version>1.6.15-RC1-SNAPSHOT</version>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
 
 	<licenses>
@@ -213,24 +213,31 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-			<version>1.6.14</version>
+			<version>1.6.15-RC1</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
 		<dependency>
 			<groupId>com.masabi.frontlinesms.plugins</groupId>
 			<artifactId>masabi-frontlinesms-plugin-formscodec</artifactId>
-			<version>0.02.14</version>
+			<version>0.02.15</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-httptrigger</artifactId>
-			<version>0.01.12</version>
+			<version>0.01.13</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-translation</artifactId>
-			<version>0.00.03</version>
+			<version>0.00.05</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.frontlinesms.plugins</groupId>
+			<artifactId>frontlinesms-plugin-reminders</artifactId>
+			<version>0.01.01</version>
+			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
