@@ -237,13 +237,6 @@
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-reminders</artifactId>
 			<version>0.01.01</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.frontlinesms.plugins</groupId>
-			<artifactId>frontlinesms-plugin-reminders</artifactId>
-			<version>0.01.02-SNAPSHOT</version>
 		</dependency>
 		
 		<!-- Test Dependencies -->
