@@ -213,36 +213,23 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-<<<<<<< HEAD
 			<version>1.6.15-RC1</version>
-=======
-			<version>1.6.15-SNAPSHOT</version>
->>>>>>> origin/master
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
 		<dependency>
 			<groupId>com.masabi.frontlinesms.plugins</groupId>
 			<artifactId>masabi-frontlinesms-plugin-formscodec</artifactId>
-<<<<<<< HEAD
 			<version>0.02.15</version>
-=======
-			<version>0.02.15-SNAPSHOT</version>
->>>>>>> origin/master
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-httptrigger</artifactId>
-<<<<<<< HEAD
 			<version>0.01.13</version>
-=======
-			<version>0.01.06</version>
->>>>>>> origin/master
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-translation</artifactId>
-<<<<<<< HEAD
 			<version>0.00.05</version>
 			<scope>compile</scope>
 		</dependency>
@@ -251,9 +238,6 @@
 			<artifactId>frontlinesms-plugin-reminders</artifactId>
 			<version>0.01.01</version>
 			<type>jar</type>
-=======
-			<version>0.00.04</version>
->>>>>>> origin/master
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
