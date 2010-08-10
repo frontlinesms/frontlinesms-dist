@@ -3,6 +3,8 @@
 #
 # Author: Emmanuel Kala <emkala@gmail.com>, Alex Anderson <alex@frontlinesms.com>
 
+java -version
+
 echo "Launching FrontlineSMS."
 echo "Please wait..."
 
