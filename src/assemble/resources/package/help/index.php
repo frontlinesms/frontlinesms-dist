@@ -1,5 +1,5 @@
 <?
 
-header("Location: help-menu.htm");
+include ('index.htm');
 
 ?>
