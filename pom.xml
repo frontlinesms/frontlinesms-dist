@@ -7,7 +7,7 @@
 		TODO it is the version of THIS project which should be changing for
 		releases rather than the FrontlineSMS core project
 	-->
-	<version>1.6.16-RC1-SNAPSHOT</version>
+	<version>1.6.16-RC1</version>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
 
 	<licenses>
