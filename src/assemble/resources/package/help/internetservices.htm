@@ -1,0 +1,128 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Language" content="en-gb">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>FrontlineSMS Help :: Internet Services</title>
+		<link href="frontlinehelp.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="help-menu.htm"><img alt="FrontlineSMS" src="img/flsmslogo.png"></a>
+		</div>
+		<div class="content">				
+			<h1>SMS Internet Service Settings</h1>
+			<h4>
+				Although FrontlineSMS was originally developed to allow group text messaging in places where there 
+				wasn't internet access, more recent versions allow messages to be sent 
+				through the internet if and when it is available. Messages sent this way 
+				are generally much faster and cheaper than sending through an attached 
+				mobile phone or modem, but you do need to set up an account and buy messages 
+				up-front using a credit card.  FrontlineSMS currently comes with support for the
+				<a target="_blank" href="http://www.clickatell.com">Clickatell</a> and
+				<a target="_blank" href="http://www.intellisms.co.uk">IntelliSMS</a>
+				messaging services. Both providers offer similar services, but Clickatell has a slightly more 
+				complicated set-up and sign-up procedure. Novice users are recommended to try IntelliSMS 
+				first, although you can use both at the same time if you want 
+				to try them both.
+				To start, click on <span class="feature">SMS Internet Service 
+				Settings</span> in the <span class="feature">Settings</span>
+				menu. If you have existing accounts set-up in FrontlineSMS, they will 
+				appear on the next screen. If you have no accounts set-up yet, click
+				<span class="feature">New</span> on the screen to give you an option to set-up a Clickatell or IntelliSMS 
+				account. You now need to sign-up for the service of your choice.
+				<span class="note">
+					You will need to be connected to the Internet to register for either of these services
+				</span>
+			</h4>				
+			
+				
+			<h2>IntelliSMS</h2>
+			<h3>
+				To use IntelliSMS you need to <span class="highlight">sign-up for an account</span> on the IntelliSMS 
+				website. Once you have your user details you simply enter your username, 
+				password and the mobile number you used to register with the service - 
+				which should ideally be the number you plan to use in your FrontlineSMS 
+				system - into 
+				the <span class="highlight">IntelliSMS Account Configuration</span>
+				screen, below.
+				
+				<div class="left_aligned_image">
+					<img border="0" src="img/settings-intellismssettings.jpg" vspace="4" width="400" height="310">
+				</div>
+				
+				If you want to also be able to <u>receive</u> text messages through the IntelliSMS service - a helpful 
+				option if you don't have a phone or modem to attach to your computer - you 
+				need to edit your &quot;<span class="highlight">My Account -&gt; 
+				Preferences</span>&quot; options on the IntelliSMS website, adding your email address and setting 
+				the <span class="emphase">Forwarding type</span> to <span class="special">Email</span> (see below).
+				
+				<div class="left_aligned_image"><img border="1" src="img/intellismsweb.jpg" vspace="4" width="400" height="377"></div>
+				
+				To finish, you now need to tell FrontlineSMS you want to receive messages via the service, and input 
+				your email account settings. You may need to consult 
+				your email service provider, or their website, to get some of this 
+				information, which needs to be added to the fields below in the <span class="highlight">IntelliSMS Account Configuration</span> 
+				screen. Tick the <span class="highlight">Use for receiving</span>box and enter your information (see example below).
+				
+				<span class="tip">
+					It is recommended that you create a separate and dedicated email address for 
+					this service, and not use your personal email address.
+				</span>
+				
+				<div class="left_aligned_image"><img border="0" src="img/intellisms-email.jpg" vspace="4" width="273" height="211"></div>
+				
+				You should now be ready to go! If you have any problems, consult the
+				<a target="_blank" href="http://www.intellisms.co.uk/sms-solutions/support/">
+				<span class="feature">Help pages</span></a> on the IntelliSMS website.
+				
+				<span class="note">
+					'Connections' to live Clickatell or IntelliSMS accounts show in the
+					<a href="phones.htm">Phones</a> tab on a <span class="highlight">HTTP</span> port.
+				</span>
+			</h3>
+				
+			<h2>Clickatell</h2>
+			<h3>
+				To use Clickatell you need to set up your own <a target="_blank" href="http://www.clickatell.com/developers/api_http.php">
+				Clickatell API Account</a> (select the <span class="highlight">HTTP/HTTPS</span> option on the sign-up screen).
+				Once you have registered for the service you need to input your username, API number, password and the 
+				mobile number you registered with Clickatell into the <span class="highlight">Clickatell Account Configuration</span>
+				screen below. As soon as you have entered your details, assuming you remain connected to the Internet, you should see your Clickatell 
+				connection show as a <span class="highlight">HTTP</span> connection on the FrontlineSMS
+				<a href="phones.htm">Phones</a> screen</font></p>
+				
+				<div class="left_aligned_image"><img border="0" src="img/settings-clickatellsettings.jpg" vspace="4" width="338" height="228"></div>
+				
+				<span class="tip">
+					Messages can be sent out via Clickatell, but you can divert any replies to a local 
+					phone attached to your computer, and FrontlineSMS. If you insert a mobile 
+					phone number in the <span class="feature">Sender Number</span>
+					field, when users hit &quot;Reply&quot; on their phones, their message will come 
+					directly back to you, and not Clickatell. Please note that all
+					<span class="feature">Sender Numbers</span> need to be approved by Clickatell, who need to verify that the number 
+					belongs to you. Check out this <a target="_blank" href="http://support.clickatell.com/faq.php?mode=view_entry&kbid=150&kbcat=22">
+					Clickatell Help</a> page for details.<br/><br/>
+					When using Clickatell you can also pass your organisation name along with the message, so it 
+					displays on the recipient's screen as, for example, &quot;From: FrontlineSMS&quot;. 
+					This might be helpful if there are issues of trust, and your recipient 
+					might be wary of the authenticity of a message coming from a number they 
+					don't recognise. To do this you need to set an alphanumeric sender ID in 
+					Clickatell, who need to approve it first. Once approved you can type in 
+					the approved text in the <span class="feature">Sender Number</span> field in FrontlineSMS (as above). Check out this
+					<a target="_blank" href="http://support.clickatell.com/faq.php?mode=view_entry&kbid=150&kbcat=22">
+					Clickatell Help</a> page for details.
+				</span>
+				
+				<span class="note">
+					'Connections' to live Clickatell or IntelliSMS accounts show in the </font>
+					<a href="phones.htm">Phones</a> tab on a <span class="highlight">HTTP</span> port
+				</span>
+				<span class="note">You cannot set both a reply number and an alphanumeric name at the same time</span>
+			</h3>
+			
+			<a href="help-menu.htm"><h6>Return to Help main menu</h6></a>
+		</div>
+	</body>
+</html>

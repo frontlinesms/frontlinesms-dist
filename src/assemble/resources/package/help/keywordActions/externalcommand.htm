@@ -1,0 +1,90 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Language" content="en-gb">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>FrontlineSMS Help :: External Command settings</title>
+		<link href="../frontlinehelp.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="../help-menu.htm"><img alt="FrontlineSMS" src="../img/flsmslogo.png"></a>
+		</div>
+		<div class="content">
+
+
+		<h1>External Command settings</h1>
+		<h3>		
+			<div class="left_aligned_image"><img border="0" src="../img/keywords-extcommandbox.jpg" vspace="5" width="619" height="568"></div>
+				
+			The <span class="feature">External Command</span> screen is where you tell FrontlineSMS to run another program on your 
+			computer, execute a set of commands, or send incoming messages over the 
+			internet to a web server whenever a text message containing a 
+			pre-determined Keyword is received. Please note that this is advanced 
+			functionality and you will likely need technical skills to make any use of 
+			it.
+			
+			<ul>
+				<li>HTTP Request</li>
+				<ul>
+					<li>
+						If you have an internet connection, FrontlineSMS can automatically send incoming messages over the 
+						internet to a web server (this is the functionality used by many 
+						<a target="_blank" href="http://www.ushahidi.com">Ushahidi</a> deployments). 
+						This can be useful in a number of ways. For example, it can be helpful if you want to back-up messages off-site in 
+						case of data loss. Or, if you're running a campaign and want to display SMS feedback from supporters on the homepage 
+						of your website, FrontlineSMS can 'pass' this information on (although your web developer will need to 
+						write a script to 'listen out' for incoming messages). The messages could then be displayed as a scrolling 'ticker'.
+					</li>
+					<li>
+						To set up a <span class="feature">HTTP Request</span>, select the option at the top of the screen. Along the
+						<span class="special">Command</span> line, enter the URL (website address) for the server you want to pass 
+						incoming messages to. Depending on how you configure the 'listening' 
+						server, you can attach certain bits of information to the end of the
+						<span class="special">Command</span> by clicking on any of the <span class="feature">Click to include</span>
+						buttons, which adds the relevant field names in for you. Once a message 
+						has been successfully received by the server, you will most likely get a 
+						response confirming its arrival. Again, depending on your remote server, 
+						the <span class="special">Response Type</span> will most likely be <span class="highlight">Plain Text</span>.
+						You can decide whether or not you want to do anything further (if not, select <span class="special">Do Not Wait For Response</span>) but you 
+						can, if you like, send a reply back to the original message sender (or an entire Group), 
+						notifying them that their message has been successfully posted to your 
+						website, or successfully received. To do this, type your auto-reply 
+						message in the <span class="special">Message</span> window and then, if you also decide to send this message to 
+						an entire Group, select the Group name from the list in window under the <span class="special">Forward to Group</span>
+						tick box.
+					</li>
+					<li>
+						Finally, you can set <span class="highlight">Start</span> and <span class="highlight">End Dates</span> 
+						if you only want the <span class="highlight">HTTP Request<span class="highlight"> to be active during a set time period
+					</li>
+					<li>
+						<span class="tip">
+							You can also insert the response text that you get back from the 
+							remote server by clicking the <span class="feature">Include Response</span> button while compiling your message</span>
+						</span>
+					</li>
+				</ul>
+			</ul>
+			<ul>
+				<li>Command Line Execution</li>
+				<ul>
+					<li>
+						Software developers and 
+						advanced users can write batch files or scripts, and then instruct 
+						FrontlineSMS to run them when the pre-determined keyword is detected. 
+					</li>
+					<li>
+						These scripts can be programmed to do pretty-much anything, depending on 
+						the programmer. To run an external command, follow the instructions above, 
+						selecting <span class="highlight">Command Line Execution</span> from the top menu.</li>
+				</ul>
+			</ul>
+		</h3>
+			
+			<a href="../keywords.htm"><h6>Return to Keywords</h6></a>			
+			<a href="../help-menu.htm"><h6>Return to Help main menu</h6></a>
+		</div>
+	</body>
+</html>
