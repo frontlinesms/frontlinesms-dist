@@ -1,98 +1,63 @@
 <html>
 
-<head>
-<meta http-equiv="Content-Language" content="en-gb">
-<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>FrontlineSMS Help :: HTTP Trigger</title>
-</head>
+	<head>
+		<meta http-equiv="Content-Language" content="en-gb">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<link href="frontlinehelp.css" rel="stylesheet" type="text/css">
 
-<style type="text/css">
-A:link {text-decoration: none}
-A:visited {text-decoration: none}
-A:active {text-decoration: none}
-A:hover {text-decoration: underline; }
-</style>
+		<title>FrontlineSMS Help :: Translation Manager</title>
+	</head>
 
-<body bgcolor="#F4F4F4">
-
-<p>&nbsp;</p>
-<div align="center">
-  <center>
-  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="950">
-    <tr>
-      <td width="763" style="border-bottom-style: solid; border-bottom-width: 1" bordercolor="#CC0066">
-      <br>
-&nbsp;<p>&nbsp;</p>
-      <p>&nbsp;</td>
-      <td width="187" valign="top" style="border-bottom-style: solid; border-bottom-width: 1" bordercolor="#CC0066">
-      <a href="help-menu.htm">
-      <img border="0" src="img/flsmslogo.png" align="right" hspace="0" width="150" height="87"></a></td>
-    </tr>
-  </table>
-  </center>
-</div>
-<div align="center">
-  <center>
-  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="950">
-    <tr>
-      <td><b><font face="Arial" size="4"><br>
-      </font><font face="Arial" size="5">HTTP Trigger</font></b><p><i>
-      <font face="Arial" size="2" color="#666666">HTTP Trigger allows developers 
-      with external applications to feed messages into FrontlineSMS for 
-      processing</font></i></p>
-      <p>
-      <img border="0" src="img/httptrigger.jpg" width="950" height="713" vspace="5"></p>
-      <p><b><font face="Arial" color="#333333">What is HTTP Trigger?</font></b></p>
-      <p><font face="Arial" size="2" color="#666666">FrontlineSMS is an 
-      extremely flexible messaging application, allowing incoming text messages 
-      to trigger keyword events (auto replies, group joining, emailing, 
-      message-posting to websites, and so on). Increasing numbers of users - 
-      software developers in particular - have been trying to integrate their 
-      own applications (which generate patient reminders, medical advice, 
-      weather forecasts, and so on). HTTP Trigger allows these external programs 
-      to pass text to FrontlineSMS, which is then sent out as a text message. 
-      Please bear in mind that this is an </font><b>
-      <font face="Arial" size="2" color="#111111">advanced feature</font></b><font color="#666666" face="Arial" size="2"> 
-      of FrontlineSMS, and is generally reserved for experienced software 
-      developers</font></p>
-      <p><b><font face="Arial" color="#333333"><br>
-      How to set up a Trigger</font></b></p>
-      <p><font face="Arial" size="2" color="#666666">The HTTP Trigger function 
-      is designed to allow the passing of HTTP commands to FrontlineSMS by using 
-      a mutually configured blank HTTP port. Currently FrontlineSMS only 
-      supports the <u>sending</u> of SMS although this may change in the future. 
-      To set up HTTP Trigger, choose a free port number and enter it into the
-      </font><b>
-      <font face="Arial" size="2" color="#111111">Port</font></b><font face="Arial" size="2" color="#666666"> 
-      field </font><font face="Arial" size="2" color="#FF9900">[<b>2</b>]</font><font face="Arial" size="2" color="#666666">. 
-      Click on the </font><b><font face="Arial" size="2" color="#008000">Start</font></b><font face="Arial" size="2" color="#666666"> 
-      button to begin monitoring the port. All events will be displayed in the main window </font>
-      <font face="Arial" size="2" color="#FF9900">[<b>1</b>]</font></p>
-      <p><img border="1" src="img/trigger-diagram.jpg" width="460" height="150"></p>
-      <p><font face="Arial" size="2" color="#666666">This diagram gives an 
-      example of an application checking for website updates (e.g. an RSS feed). 
-      When the application detects that a new feed has occurred, it uses a HTTP 
-      request to communicate with FrontlineSMS in the following format:<br>
-      <br>
-      </font><font face="Arial" size="2" color="#333333">http://localhost:&lt;portNumber&gt;/send/sms/&lt;destinationPhoneNumber&gt;/&lt;messageContent&gt;/
-      <br>
-      </font><font face="Arial" size="2" color="#666666"><br>
-      Where &lt;portNumber&gt; is the free port, &lt;destinationPhoneNumber&gt; is the 
-      number to send the message to, and &lt;messageContent&gt; is the content of the 
-      message. All values should be URL-encoded</font></p>
-      <p>&nbsp;</p>
-      </td>
-    </tr>
-    <tr>
-      <td><font size="1" face="Arial"><a href="help-menu.htm">Return to Help 
-      main menu</a></font><p>&nbsp;</td>
-    </tr>
-  </table>
-  </center>
-</div>
-
-</body>
-
+	<body>
+		<div class="header">
+			<a href="help-menu.htm"><img alt="FrontlineSMS" src="img/flsmslogo.png"></a>
+		</div>
+		<div class="content">
+			<h1>HTTP Trigger</h1>
+			<h4>HTTP Trigger allows developers with external applications to feed messages into FrontlineSMS for processing</h4>
+      
+			<div class="left_aligned_image"><img border="0" src="img/httptrigger.jpg" width="950" height="713" vspace="5"></div>
+			
+			<h2>What is HTTP Trigger?</h2>
+			<h3>
+				FrontlineSMS is an extremely flexible messaging application, allowing incoming text messages 
+				to trigger keyword events (auto replies, group joining, emailing, 
+				message-posting to websites, and so on). Increasing numbers of users - 
+				software developers in particular - have been trying to integrate their 
+				own applications (which generate patient reminders, medical advice, 
+				weather forecasts, and so on). HTTP Trigger allows these external programs 
+				to pass text to FrontlineSMS, which is then sent out as a text message. 
+				Please bear in mind that this is an <span class="highlight">advanced feature</span>
+				of FrontlineSMS, and is generally reserved for experienced software developers.
+			
+				<span class="subtitle">How to set up a Trigger</span>
+				The HTTP Trigger function is designed to allow the passing of HTTP commands to FrontlineSMS by using 
+				a mutually configured blank HTTP port. Currently FrontlineSMS only 
+				supports the <u>sending</u> of SMS although this may change in the future. 
+				To set up HTTP Trigger, choose a free port number and enter it into the
+				<span class="highlight">Port</span> field <span class="reference">2</span>. 
+				Click on the <span class="feature">Start</span>
+				button to begin monitoring the port. All events will be displayed in the main window
+				<span class="reference">1</span>.
+				<span class="note">
+					From version 1.6.16, you can ask FrontlineSMS to start listening <span class="highlight">automatically</span>
+					on the specified port when the software is launched by enabling the <span class="reference">3</span> checkbox.
+				</span>
+				
+				<div class="left_aligned_image"><img border="1" src="img/trigger-diagram.png"></div>
+				
+				This diagram gives an example of an application checking for website updates (e.g. an RSS feed). 
+				When the application detects that a new feed has occurred, it uses a HTTP 
+				request to communicate with FrontlineSMS in the following format:
+				
+				<span class="cleared">http://localhost:&lt;portNumber&gt;/send/sms/&lt;destinationPhoneNumber&gt;/&lt;messageContent&gt;/</span>
+				
+				Where &lt;portNumber&gt; is the free port, &lt;destinationPhoneNumber&gt; is the 
+				number to send the message to, and &lt;messageContent&gt; is the content of the 
+				message. All values should be URL-encoded.
+			</h3>
+			
+			<a href="help-menu.htm"><h6>Return to Help main menu</h6></a>
+		</div>
+	</body>
 </html>
