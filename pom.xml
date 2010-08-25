@@ -236,7 +236,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-reminders</artifactId>
-			<version>0.01.07</version>
+			<version>0.01.08</version>
 		</dependency>
 		
 		<!-- Test Dependencies -->
