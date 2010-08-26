@@ -73,7 +73,13 @@
 				<font color="#808080" face="Verdana" size="1">Last edited: August, 2010</font>
 			</div>
 			
-			<a href="../"><h6>Let me choose another help version</h6></a>
+			<script language="javascript">
+				<!--
+				/* Include link to help index if we're on the help.frontlinesms.com domain */
+				if(document.domain.indexOf('help.frontlinesms.com') != -1)
+					document.write('<a href="../"><h6>Let me choose another help version</h6></a>');
+				-->
+			</script>
 		</div>
 	</body>
 </html>
