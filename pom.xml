@@ -37,8 +37,7 @@
 		</license>
 	</licenses>
 	
-	<scm>
-	
+	<scm>	
 		<connection>scm:git://frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist.git</connection>
 		<developerConnection>scm:git:ssh://${sourceforge.username}@frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist</developerConnection>
 	</scm>
@@ -157,7 +156,7 @@
 					if the OS is Windows and Excelsior Jet compiler and packager are installed -->
 				<groupId>net.frontlinesms.build</groupId>
 				<artifactId>jetpackager-maven-plugin</artifactId>
-				<version>0.0.2</version>
+				<version>0.0.3-SNAPSHOT</version>
 				<configuration>
 					<splashImage>src/assemble/resources/FrontlineSMS_Splash_Logo.jpg</splashImage>
 					<programIcon>src/assemble/resources/FrontlineSMS.ico</programIcon>
@@ -213,14 +212,14 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-			<version>1.6.16.1</version>
+			<version>1.6.16.3-SNAPSHOT</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
 		<dependency>
 			<groupId>com.masabi.frontlinesms.plugins</groupId>
 			<artifactId>masabi-frontlinesms-plugin-formscodec</artifactId>
-			<version>0.02.20</version>
+			<version>0.02.21-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
