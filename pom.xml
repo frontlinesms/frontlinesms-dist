@@ -156,7 +156,7 @@
 					if the OS is Windows and Excelsior Jet compiler and packager are installed -->
 				<groupId>net.frontlinesms.build</groupId>
 				<artifactId>jetpackager-maven-plugin</artifactId>
-				<version>0.0.3-SNAPSHOT</version>
+				<version>0.0.3</version>
 				<configuration>
 					<splashImage>src/assemble/resources/FrontlineSMS_Splash_Logo.jpg</splashImage>
 					<programIcon>src/assemble/resources/FrontlineSMS.ico</programIcon>
@@ -212,14 +212,14 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-			<version>1.6.16.3-SNAPSHOT</version>
+			<version>1.6.16.3</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
 		<dependency>
 			<groupId>com.masabi.frontlinesms.plugins</groupId>
 			<artifactId>masabi-frontlinesms-plugin-formscodec</artifactId>
-			<version>0.02.22-SNAPSHOT</version>
+			<version>0.02.22</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
