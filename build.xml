@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="FrontlineSMS_Dist" basedir="." default="uploadHelp">
+	<property file="build.properties"/>
+	<property name="a" value="hello"/>
+	<target name="uploadHelp">	
+		<echo>Starting the FTP uploadHelp</echo>
+		<echo>ftp Server: frontlinesms.com</echo>
+		<echo>userid: ${userID}</echo>
+		<echo message="v: ${version}"/>
+		  <ftp 
+				action="mkdir"
+		  		server="frontlinesms.com"		  	
+				userid="${userID}"
+		    	password="${password}"
+				remotedir="/httpdocs/manuals/test/${version}"
+		  		verbose="true"
+			/>
+		  <ftp 			
+		  		server="frontlinesms.com"		  	
+				userid="${userID}"
+		    	password="${password}"
+				remotedir="/httpdocs/manuals/test/${version}"
+		  		verbose="true"
+			>	
+		    <fileset dir="src/assemble/resources/package/help"/>
+		  </ftp>
+		<echo>Finished!</echo>
+	</target>
+</project>
