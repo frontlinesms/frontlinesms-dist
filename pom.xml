@@ -202,50 +202,44 @@
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>zipResources</id>	<!-- TODO rename? -->
+						<id>uploadHelp</id>
 						<!-- Make sure that the latest version of resources.zip is bundled inside the JAR -->
-						<phase>generate-resources</phase>
+						<phase>deploy</phase>
 						<goals>
 							<goal>run</goal>
 						</goals>
 						<configuration>
 							<tasks>
 								<ant target="uploadHelp" inheritRefs="true">
-									<property name="build.dir"
-                                        value="${project.build.directory}" />
-                                    <property name="artifact.id"
-                                        value="${project.artifactId}" />
-                                    <property name="version"
-                                        value="${project.version}" />
-                                    <property name="userID"
-                                        value="${help.ftp.username}" />
-                                    <property name="password"
-                                        value="${help.ftp.password}" />    
+									<property name="build.dir" value="${project.build.directory}" />
+									<property name="artifact.id" value="${project.artifactId}" />
+									<property name="version" value="${project.version}" />
+									<property name="help.ftp.username" value="${help.ftp.username}" />
+									<property name="help.ftp.password" value="${help.ftp.password}" />
 								</ant>
 							</tasks>
 						</configuration>
 					</execution>
 				</executions>
-				
+
 				<!-- Ant FTP Dependencies -->
-			<dependencies>
+				<dependencies>
 					<dependency>
-			            <groupId>commons-net</groupId>
-			            <artifactId>commons-net</artifactId>
-			            <version>1.4.1</version>
-			        </dependency>
-			        <dependency>
-			          	<groupId>ant</groupId>
-			          	<artifactId>ant-commons-net</artifactId>
-			        	<version>1.6.5</version>
+						<groupId>commons-net</groupId>
+						<artifactId>commons-net</artifactId>
+						<version>1.4.1</version>
 					</dependency>
 					<dependency>
-			            <groupId>ant</groupId>
-			            <artifactId>ant-nodeps</artifactId>
-			            <version>1.6.5</version>
-			        </dependency>
-			</dependencies>
-			
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-commons-net</artifactId>
+						<version>1.6.5</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-nodeps</artifactId>
+						<version>1.6.5</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 
