@@ -3,12 +3,9 @@
  */
 package net.frontlinesms;
 
-import java.util.Set;
-
 import org.springframework.context.ApplicationContext;
 
 
-import net.frontlinesms.PluginManager;
 import net.frontlinesms.events.EventBus;
 import net.frontlinesms.junit.BaseTestCase;
 import net.frontlinesms.plugins.PluginController;
