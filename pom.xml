@@ -240,7 +240,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-reminders</artifactId>
-			<version>0.01.09</version>
+			<version>0.01.12-SNAPSHOT</version>
 		</dependency>
 		
 		<!-- Test Dependencies -->
