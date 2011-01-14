@@ -7,7 +7,7 @@
 		the version of this project and frontlinesms-core should
 		be kept in sync when releasing.
 	-->
-	<version>1.7.00-beta-2-SNAPSHOT</version>
+	<version>1.7.00-beta-4-SNAPSHOT</version>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
 
 	<licenses>
@@ -212,14 +212,19 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-			<version>1.7.00-beta-2-SNAPSHOT</version>
+			<version>1.7.00-beta-4-SNAPSHOT</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
 		<dependency>
 			<groupId>com.masabi.frontlinesms.plugins</groupId>
 			<artifactId>masabi-frontlinesms-plugin-formscodec</artifactId>
-			<version>0.02.22</version>
+			<version>0.02.25-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>net.frontlinesms.plugins</groupId>
+			<artifactId>frontlinesms-plugin-forms</artifactId>
+			<version>0.02.30-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
