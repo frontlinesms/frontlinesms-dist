@@ -38,9 +38,8 @@
 	</licenses>
 	
 	<scm>
-	
-		<connection>scm:git://frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist.git</connection>
-		<developerConnection>scm:git:ssh://${sourceforge.username}@frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist</developerConnection>
+		<connection>scm:git://github.com/frontlinesms/frontlinesms-dist.git</connection>
+		<developerConnection>scm:git:git@github.com:frontlinesms/frontlinesms-dist.git</developerConnection>
 	</scm>
 
 	<repositories>
