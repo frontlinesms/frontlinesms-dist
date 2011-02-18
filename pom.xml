@@ -3,86 +3,21 @@
 	<groupId>net.frontlinesms.core</groupId>
 	<artifactId>FrontlineSMS-distribution</artifactId>
 	<name>FrontlineSMS Desktop build</name>
-	<!--
-		the version of this project and frontlinesms-core should
-		be kept in sync when releasing.
-	-->
-	<version>1.7.00-beta-4-SNAPSHOT</version>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
+	<parent>
+		<groupId>net.frontlinesms.core</groupId>
+		<artifactId>parent-pom</artifactId>
+		<version>1.7.00-beta-4-SNAPSHOT</version>
+		<relativePath>../parent-pom</relativePath>		
+	</parent>
 
-	<licenses>
-		<license>
-			<name>GNU Lesser General Public License v3 or later</name>
-			<url>http://www.gnu.org/copyleft/lesser.html</url>
-			<distribution>manual</distribution>
-			<comments>
-				FrontlineSMS - http://www.frontlinesms.com
-				Copyright 2007, 2008 kiwanja
-				
-				This file is part of FrontlineSMS.
-				
-				FrontlineSMS is free software: you can redistribute it and/or modify it
-				under the terms of the GNU Lesser General Public License as published by
-				the Free Software Foundation, either version 3 of the License, or (at
-				your option) any later version.
-				
-				FrontlineSMS is distributed in the hope that it will be useful, but
-				WITHOUT ANY WARRANTY; without even the implied warranty of
-				MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser
-				General Public License for more details.
-				
-				You should have received a copy of the GNU Lesser General Public License
-				along with FrontlineSMS. If not, see http://www.gnu.org/licenses/.
-			</comments>
-		</license>
-	</licenses>
-	
 	<scm>
 		<connection>scm:git://github.com/frontlinesms/frontlinesms-dist.git</connection>
 		<developerConnection>scm:git:git@github.com:frontlinesms/frontlinesms-dist.git</developerConnection>
 	</scm>
 
-	<repositories>
-		<repository>
-			<id>frontlinesms.repo</id>
-			<name>FrontlineSMS Maven repository</name>
-			<url>http://dev.frontlinesms.com/m2repo</url>
-		</repository>
-		<repository>
-			<id>maven-repository.dev.java.net</id>
-			<url>http://download.java.net/maven/2</url>
-		</repository>
-	</repositories>
-	
-	<pluginRepositories>
-		<pluginRepository>
-			<id>frontlinesms.repo</id>
-			<name>FrontlineSMS Maven repository</name>
-			<url>http://dev.frontlinesms.com/m2repo</url>
-		</pluginRepository>
-	</pluginRepositories>
-
-	<distributionManagement>
-		<repository>
-			<id>frontlinesms.repo</id>
-			<name>FrontlineSMS Maven repository</name>
-			<url>ftp://dev.frontlinesms.com</url>
-		</repository>
-	</distributionManagement>
-
 	<build>
 		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.0</version>
-			</plugin>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
@@ -198,33 +133,25 @@
 				</executions>
 			--></plugin>
 		</plugins>
-
-		<extensions>
-			<extension>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-ftp</artifactId>
-				<version>1.0-beta-6</version>
-			</extension>
-		</extensions>
 	</build>
 
 	<dependencies>
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-			<version>1.7.00-beta-4-SNAPSHOT</version>
+			<version>${frontlinesms.version}</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
 		<dependency>
+			<groupId>net.frontlinesms.plugins</groupId>
+			<artifactId>frontlinesms-plugin-forms</artifactId>
+			<version>0.02.31-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>com.masabi.frontlinesms.plugins</groupId>
 			<artifactId>masabi-frontlinesms-plugin-formscodec</artifactId>
 			<version>0.02.25-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>net.frontlinesms.plugins</groupId>
-			<artifactId>frontlinesms-plugin-forms</artifactId>
-			<version>0.02.30-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
@@ -241,20 +168,6 @@
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-reminders</artifactId>
 			<version>0.01.12-SNAPSHOT</version>
-		</dependency>
-		
-		<!-- Test Dependencies -->
-		<dependency>
-			<groupId>net.frontlinesms.core</groupId>
-			<artifactId>frontlinesms-test</artifactId>
-			<version>0.01.01</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.8.2</version>
-			<scope>test</scope> 
 		</dependency>
 	</dependencies>
 </project>
