@@ -157,7 +157,6 @@
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-translation</artifactId>
 			<version>0.00.19-SNAPSHOT</version>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
