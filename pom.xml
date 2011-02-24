@@ -6,9 +6,9 @@
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
-		<artifactId>pom-parent</artifactId>
+		<artifactId>frontlinesms-pom-parent</artifactId>
 		<version>1.7.00-beta-4-SNAPSHOT</version>
-		<relativePath>../pom-parent</relativePath>		
+		<relativePath>../pom-parent</relativePath>
 	</parent>
 
 	<build>
