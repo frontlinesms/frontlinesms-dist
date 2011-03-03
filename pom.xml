@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.frontlinesms.core</groupId>
-	<artifactId>FrontlineSMS-distribution</artifactId>
+	<artifactId>frontlinesms-dist</artifactId>
 	<name>FrontlineSMS Desktop build</name>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
-	<version>1.7.00-beta-4</version>
+	<version>1.7.00-beta-4-SNAPSHOT</version>
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-pom-parent</artifactId>
