@@ -145,27 +145,27 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-forms</artifactId>
-			<version>0.02.31-SNAPSHOT</version>
+			<version>0.02.31</version>
 		</dependency>
 		<dependency>
 			<groupId>com.masabi.frontlinesms.plugins</groupId>
 			<artifactId>masabi-frontlinesms-plugin-formscodec</artifactId>
-			<version>0.02.25-SNAPSHOT</version>
+			<version>0.02.25</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-httptrigger</artifactId>
-			<version>0.01.24-SNAPSHOT</version>
+			<version>0.01.24</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-translation</artifactId>
-			<version>0.00.19-SNAPSHOT</version>
+			<version>0.00.19</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-reminders</artifactId>
-			<version>0.01.12-SNAPSHOT</version>
+			<version>0.01.12</version>
 		</dependency>
 	</dependencies>
 </project>
