@@ -167,5 +167,12 @@
 			<artifactId>frontlinesms-plugin-reminders</artifactId>
 			<version>0.01.12</version>
 		</dependency>
+		
+		<!-- SMS Internet Services -->
+		<dependency>
+			<groupId>com.skebby.gateways</groupId>
+			<artifactId>skebby-frontlinesms</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
