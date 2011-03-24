@@ -4,7 +4,7 @@
 	<artifactId>frontlinesms-dist</artifactId>
 	<name>FrontlineSMS Desktop build</name>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
-	<version>1.7.00-beta-5.1</version>
+	<version>1.7.00-beta-6-SNAPSHOT</version>
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-pom-parent</artifactId>
