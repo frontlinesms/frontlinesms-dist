@@ -4,11 +4,11 @@
 	<artifactId>frontlinesms-dist</artifactId>
 	<name>FrontlineSMS Desktop build</name>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
-	<version>1.7.00-beta-5-SNAPSHOT</version>
+	<version>1.7.00-beta-5</version>
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-pom-parent</artifactId>
-		<version>1.7.00-beta-5-SNAPSHOT</version>
+		<version>1.7.00-beta-5</version>
 		<relativePath>../pom-parent</relativePath>
 	</parent>
 
@@ -145,7 +145,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-forms</artifactId>
-			<version>0.02.32-SNAPSHOT</version>
+			<version>0.02.32</version>
 		</dependency>
 		<dependency>
 			<groupId>com.masabi.frontlinesms.plugins</groupId>
@@ -155,29 +155,29 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-httptrigger</artifactId>
-			<version>0.01.25-SNAPSHOT</version>
+			<version>0.01.25</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-translation</artifactId>
-			<version>0.00.20-SNAPSHOT</version>
+			<version>0.00.20</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-reminders</artifactId>
-			<version>0.01.13-SNAPSHOT</version>
+			<version>0.01.13</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-sync</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 		
 		<!-- SMS Internet Services -->
 		<dependency>
 			<groupId>com.skebby.gateways</groupId>
 			<artifactId>frontlinesms-service-skebby</artifactId>
-			<version>1.0.1-SNAPSHOT</version>
+			<version>1.0.1</version>
 		</dependency>
 	</dependencies>
 </project>
