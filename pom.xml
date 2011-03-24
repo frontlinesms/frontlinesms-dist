@@ -176,7 +176,7 @@
 		<!-- SMS Internet Services -->
 		<dependency>
 			<groupId>com.skebby.gateways</groupId>
-			<artifactId>skebby-frontlinesms</artifactId>
+			<artifactId>frontlinesms-service-skebby</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
