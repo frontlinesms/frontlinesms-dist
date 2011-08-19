@@ -4,7 +4,7 @@
 	<artifactId>FrontlineSMS-distribution</artifactId>
 	<name>FrontlineSMS Desktop build</name>
 	<!-- the version of this project and core should change for releases. -->
-	<version>1.6.17-SNAPSHOT</version>
+	<version>1.6.17-RC1</version>
 	<description>This project allows packaging of separate modules of FrontlineSMS for distribution as a desktop application.</description>
 
 	<licenses>
