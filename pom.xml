@@ -33,39 +33,27 @@
 			</comments>
 		</license>
 	</licenses>
-	
-	<scm>	
-		<connection>scm:git://frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist.git</connection>
-		<developerConnection>scm:git:ssh://${sourceforge.username}@frontlinesms.git.sourceforge.net/gitroot/frontlinesms/frontline-dist</developerConnection>
-	</scm>
 
-	<repositories>
-		<repository>
-			<id>cleone.net.repo</id>
-			<name>Temporary FrontlineSMS repository on cleone.net</name>
-			<url>http://m2repo.cleone.net</url>
-		</repository>
-		<repository>
-			<id>maven-repository.dev.java.net</id>
-			<url>http://download.java.net/maven/2</url>
-		</repository>
-	</repositories>
-	
-	<pluginRepositories>
-		<pluginRepository>
-			<id>cleone.net.repo</id>
-			<name>Temporary FrontlineSMS repository on cleone.net</name>
-			<url>http://m2repo.cleone.net</url>
-		</pluginRepository>
-	</pluginRepositories>
-
-	<distributionManagement>
-		<repository>
-			<id>cleone.net.repo</id>
-			<name>Temporary FrontlineSMS repository on cleone.net</name>
-			<url>ftp://m2repo.cleone.net</url>
-		</repository>
-	</distributionManagement>
+ 	<scm>
+ 		<connection>scm:git://github.com/frontlinesms/frontlinesms-dist.git</connection>
+ 		<developerConnection>scm:git:git@github.com:frontlinesms/frontlinesms-dist.git</developerConnection>
+ 	</scm>
+ 	
+ 	<repositories>
+ 		<repository>
+ 			<id>frontlinesms.repo</id>
+ 			<name>FrontlineSMS Maven repository</name>
+ 			<url>http://dev.frontlinesms.com/m2repo</url>
+ 		</repository>
+ 	</repositories>
+ 	
+ 	<distributionManagement>
+ 		<repository>
+ 			<id>frontlinesms.repo</id>
+ 			<name>FrontlineSMS Maven repository</name>
+ 			<url>ftp://dev.frontlinesms.com</url>
+ 		</repository>
+ 	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -210,7 +198,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-			<version>1.6.17-SNAPSHOT</version>
+			<version>1.6.17-RC1</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
