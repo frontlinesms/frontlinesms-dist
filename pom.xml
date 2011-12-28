@@ -232,14 +232,14 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-sync</artifactId>
-			<version>0.0.1</version>
+			<version>0.0.2-SNAPSHOT</version>
 		</dependency>
 		
 		<!-- SMS Internet Services -->
 		<dependency>
 			<groupId>com.skebby.gateways</groupId>
 			<artifactId>frontlinesms-service-skebby</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.2-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
