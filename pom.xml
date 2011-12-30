@@ -245,5 +245,11 @@
 			<artifactId>frontlinesms-service-skebby</artifactId>
 			<version>1.0.2-SNAPSHOT</version>
 		</dependency>
+		
+		<!-- TEST DEPENDENCIES -->
+		<dependency>
+			<groupId>net.frontlinesms.test</groupId>
+			<artifactId>frontlinesms-test</artifactId>
+		</dependency>
 	</dependencies>
 </project>
