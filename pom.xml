@@ -233,11 +233,6 @@
 			<artifactId>frontlinesms-plugin-sync</artifactId>
 			<version>0.0.2-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>net.frontlinesms.plugins</groupId>
-			<artifactId>frontlinesms-plugin-learn</artifactId>
-			<version>0.0.6-SNAPSHOT</version>
-		</dependency>
 		
 		<!-- SMS Internet Services -->
 		<dependency>
