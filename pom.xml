@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-pom-parent</artifactId>
-		<version>1.7.0-beta-10</version>
+		<version>1.7.0-beta-11</version>
 		<relativePath>../pom-parent</relativePath>
 	</parent>
 	<version>1.7.0-beta-11-SNAPSHOT</version>
@@ -201,7 +201,6 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms-core</artifactId>
-			<version>1.7.0-beta-10</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
@@ -234,6 +233,11 @@
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-sync</artifactId>
 			<version>0.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>net.frontlinesms.plugins</groupId>
+			<artifactId>frontlinesms-plugin-learn</artifactId>
+			<version>0.0.6</version>
 		</dependency>
 		
 		<!-- SMS Internet Services -->
