@@ -9,7 +9,7 @@
 		<version>1.7.0-beta-11</version>
 		<relativePath>../pom-parent</relativePath>
 	</parent>
-	<version>Learn-beta-2-SNAPSHOT</version>
+	<version>Learn-beta-2</version>
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
@@ -237,7 +237,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-learn</artifactId>
-			<version>0.0.6</version>
+			<version>0.0.8</version>
 		</dependency>
 		
 		<!-- SMS Internet Services -->
