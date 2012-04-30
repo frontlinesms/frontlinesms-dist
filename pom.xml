@@ -9,7 +9,7 @@
 		<version>1.7.0-beta-11</version>
 		<relativePath>../pom-parent</relativePath>
 	</parent>
-	<version>Learn-beta-2</version>
+	<version>Learn-beta-3-SNAPSHOT</version>
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
