@@ -14,3 +14,6 @@ temp/
 
 # Vi temp files
 *.swp
+
+# Temporary log files
+package.log

@@ -24,6 +24,12 @@
 		</fileSet>
 		
 		<fileSet>
+			<!-- Include files specific to this distribution -->
+			<directory>src/assemble/resources/build-specific/${project.artifactId}</directory>
+			<outputDirectory>.</outputDirectory>
+		</fileSet>
+		
+		<fileSet>
 			<!-- Include JNI Libraries for Windows -->
 			<directory>lib/windows</directory>
 			<outputDirectory>jni</outputDirectory>
