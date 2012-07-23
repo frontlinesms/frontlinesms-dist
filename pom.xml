@@ -33,6 +33,10 @@
 
 	<properties>
 		<build.name>FrontlineSMS</build.name>
+		<!-- This is the ID by which install4j identifies different apps.  This should be
+			changed for different FrontlineSMS falvours so that they do not install
+			on top of one another.  -->
+		<install4j.application.id>1689-4956-5311-2233</install4j.application.id>
 	</properties>
 
 	<build>
