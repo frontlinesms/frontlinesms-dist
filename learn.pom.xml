@@ -6,17 +6,18 @@
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-dist</artifactId>
-		<version>1.7.0-beta-11</version>
+		<version>1.7.0-beta-14-SNAPSHOT</version>
 		<relativePath>./</relativePath>
 	</parent>
-	<version>Learn-beta-3-SNAPSHOT</version>
+	<version>beta-3-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
 	</scm>
 
 	<properties>
-		<build.name>FrontlineSMS:Learn</build.name>
+		<build.name>FrontlineSMS_Learn</build.name>
 		<install4j.application.id>3002-5083-8012-9186</install4j.application.id>
 	</properties>
 
@@ -24,7 +25,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-learn</artifactId>
-			<version>0.0.8</version>
+			<version>0.0.9-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>

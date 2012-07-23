@@ -11,3 +11,6 @@ bin/
 
 # Temporary working directory
 temp/
+
+# Vi temp files
+*.swp
