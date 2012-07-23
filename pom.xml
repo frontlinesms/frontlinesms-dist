@@ -6,10 +6,10 @@
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-pom-parent</artifactId>
-		<version>1.7.0-beta-12</version>
+		<version>1.7.0-beta-14-SNAPSHOT</version>
 		<relativePath>../pom-parent</relativePath>
 	</parent>
-	<version>1.7.0-beta-13-SNAPSHOT</version>
+	<version>1.7.0-beta-14-SNAPSHOT</version>
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
@@ -33,6 +33,10 @@
 
 	<properties>
 		<build.name>FrontlineSMS</build.name>
+		<!-- This is the ID by which install4j identifies different apps.  This should be
+			changed for different FrontlineSMS falvours so that they do not install
+			on top of one another.  -->
+		<install4j.application.id>1689-4956-5311-2233</install4j.application.id>
 	</properties>
 
 	<build>
@@ -201,7 +205,6 @@
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms-core</artifactId>
-			<version>1.7.0-beta-12</version>
 		</dependency>
 
 		<!-- FrontlineSMS Plugins -->
