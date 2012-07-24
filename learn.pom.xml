@@ -13,7 +13,7 @@
 	<packaging>pom</packaging>
 
 	<scm>
-		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${project.parent.artifactId}.git</developerConnection>
 	</scm>
 
 	<properties>
