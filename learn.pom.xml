@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-learn</artifactId>
-			<version>0.0.9-SNAPSHOT</version>
+			<version>0.0.9</version>
 		</dependency>
 	</dependencies>
 </project>
