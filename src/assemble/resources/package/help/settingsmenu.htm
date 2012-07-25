@@ -12,14 +12,70 @@
 			<a href="help-menu.htm"><img alt="FrontlineSMS" src="img/flsmslogo.png"></a>
 		</div>
 		<div class="content">
-			<h1>The Settings menu</h1>
+			<h1>The Settings Menu</h1>
 			<h4>
-				The Settings menu allows you to select database options, replace the &quot;Home&quot; tab 
-				main image, select your MMS options, configure your Internet services and change screen languages.
-			</h4>
-			
+				The Settings menu allows you to change screen languages and configure preferences.
+				<!--The Settings menu allows you to select database options, replace the &quot;Home&quot; tab 
+				main image, select your MMS options, configure your Internet services and change screen languages.-->
+		  </h4>
+														  
 			<div class="left_aligned_image"><img src="img/settingsmenu.jpg"/></div>
+			<h2 class="section_heading">Appearence</h2>
+			<hr>
+			<h2>Language</h2>
+			<h3>
+				FrontlineSMS currently comes with language support for English, Arabic, Azerbaijani, Bengali, 
+				German, Spanish, Finnish, French, Hindi, Indonesian, Khmer, Portuguese, 
+				Russian, Swahili and Chinese. Selecting one of these languages from the <span class="feature">Language</span>
+				menu will turn all menus and screen messages from the default English 
+				into the chosen language.
+				<span class="tip">
+					Languages such as Chinese will only display correctly if your computer supports the 
+					additional character sets required. If the typeface displays as square 
+					blocks on your screen then your computer does not have the correct font. Refer to your Windows user manual for 
+					details.
+				</span>
+			</h3>
+
+			<h2>Preferences</h2>
+			<h3>
+				From version <span class="highlight">1.7.0</span>, FrontlineSMS enables you to access Appearence, General, Database Settings, E-mail Settings, Devices, Internet Services, MMS, HTTP Trigger and Sync from the Preferences Tab.
+				<div class="left_aligned_image"><img src="img/preferences.png"></div>
+			</h3>
 			
+			<h2>Home Tab Logo Settings</h2>
+			<h3>
+				If you want to customise the &quot;Home&quot; screen in FrontlineSMS to display your own logo or organisation 
+				name, you can replace the default &quot;\o/&quot; image with one of your own, or set it as invisible. 
+				
+				<span class="note">
+					Because of the smaller screen sizes on some of the lower-cost netbooks and laptops, you may need 
+					to remove the image altogether in order to see the whole screen.
+				</span>
+			</h3>
+			<h2 class="section_heading">General</h2>
+			<hr>
+			<h2>Statistics</h2>
+			<h3>
+				FrontlineSMS collects information on the version installed, User Id, OS, Date of last submision, Contacts created, Number of messages sent and received, Number of messages sent and received since last submission, number of Keywords created, Keyword Actions, Number of Phones connected and Phone details.
+				This information helps us report to our donors and gives a snapshot of how FrontlineSMS is being used.
+				We promise not to use it for anything else. 
+				<div class="left_aligned_image"><img src="img/statistics.jpg"/></div>
+			</h3>
+
+			<h2>Cost estimator</h2>
+			<h3>
+				FrontlineSMS enables you to set the standard charges per message in the cost estimator section. 
+				  <div class="left_aligned_image"><img src="img/cost_estimator.png"/></div>
+			</h3>
+
+			<h2>Country</h2>
+			<h3>
+				When creating a contact, FrontlineSMS can automatically convert the contact number into an international format using the set country's code. Set the country in this section in order to ensure the correct international code is used.
+				<div class="left_aligned_image"><img src="img/country.jpg"/></div>
+				<div class="left_aligned_image"><img src="img/internationalformat.png"/></div>
+			</h3>
+
 			<h2>Database Settings</h2>
 			<h3>
 				Only under very unusual circumstances should you need to go into the
@@ -27,20 +83,7 @@
 				menu (for example, to rename the database if you're running two copies of 
 				FrontlineSMS on the same machine). It is recommended that only system 
 				administrators make any changes to the database.
-			</h3>
-			
-			
-			<h2>Home Tab Logo Settings</h2>
-			<h3>
-				If you want to customise the &quot;Home&quot; screen in FrontlineSMS to display your own logo or organisation 
-				name, you can replace the main &quot;\o/&quot; image with one of your own, or remove 
-				it altogether. When you start FrontlineSMS for the first time, there is no 
-				image displayed. To display the default &quot;\o/&quot; logo, select &quot;Use default&quot;.
-				
-				<span class="note">
-					Because of the smaller screen sizes on some of the lower-cost netbooks and laptops, you may need 
-					to remove the image altogether in order to see the whole screen.
-				</span>
+				<div class="left_aligned_image"><img src="img/database.jpg"/></div>
 			</h3>
 			
 			<h2>E-mail Settings</h2>
@@ -49,9 +92,32 @@
 				on the <a href="keywords.htm">Keywords</a> help page). In order for FrontlineSMS to do this, it needs access to a 
 				registered email account. This is set up in the <span class="feature">Email Settings</span> screen 
 				(you may have to refer to your email provider to obtain the necessary settings).
+				<div class="left_aligned_image"><img src="img/email_settings.jpg"/></div>
 			</h3>
-			
-			<h2>MMS Settings</h2>
+			<h2 class="section_heading">Services</h2>
+			<hr>
+			<h2>Devices</h2>
+			<h3>
+				Under the devices > general section there is a a checkbox labeled 'prompt a help dialog when no device is connected' which is checked by default. The dialog below will be displayed when the application is started and no connected device is detected or whenever a detected device is disconnected.
+				<div class="left_aligned_image"><img src="img/no-device-connected.png"/></div>
+
+				When a connected device is selected from the device(s) list, the screen below will be displayed to enable the user to set different actions on the connected device. 
+				<div class="left_aligned_image"><img src="img/device-settings.png"/></div>
+			</h3>
+				
+			<h2>Internet Service Settings</h2>
+			<h3>
+				Although FrontlineSMS was originally developed to allow group text messaging in places where there 
+				wasn't internet access, more recent versions allow messages to be sent 
+				through the internet if and when it is available. Messages sent this way 
+				are generally much faster and cheaper than sending through an attached 
+				mobile phone or modem, but you do need to set up an account and buy messages 
+				up-front using a credit card. Check the <a href="internetservices.htm">Internet Services help page</a> to learn
+				more about <span class="feature">Internet Services</a> in FrontlineSMS.
+				<div class="left_aligned_image"><img src="img/internet_service_settings.png"/></div>			
+			</h3>
+
+			<h2>MMS</h2>
 			<h3>
 				From version <span class="highlight">1.6.15</span>, FrontlineSMS comes with a new <span class="feature">Multimedia Messages</span>
 				(MMS) compatibility. For now, you can receive MMS sent to an e-mail address (MMS sent to the connected device is not supported yet).
@@ -63,36 +129,17 @@
 				
 				<span class="note">
 					Every carrier formats MMS email content differently, so although MMS from most networks should work without trouble, some may not.
-					If you are finding messages are not processed, or contain incorrect information, please forward the offending emails
+					If you are finding messages are not processed, or contain incorrect information, please forward the problematic emails
 					to us and we will endeavour to add support in the next release.
 				</span>
 			</h3>
-				
-			<h2>SMS Internet Service Settings</h2>
-			<h3>
-				Although FrontlineSMS was originally developed to allow group text messaging in places where there 
-				wasn't internet access, more recent versions allow messages to be sent 
-				through the internet if and when it is available. Messages sent this way 
-				are generally much faster and cheaper than sending through an attached 
-				mobile phone or modem, but you do need to set up an account and buy messages 
-				up-front using a credit card. Check the <a href="internetservices.htm">Internet Services help page</a> to learn
-				more about <span class="feature">Internet Services</a> in FrontlineSMS.
-			</h3>
 			
-			<h2>Language</h2>
+			<h2 class="section_heading">FrontlineSMS Plugins Section</h2>
+			<hr>
 			<h3>
-				FrontlineSMS currently comes with language support for English, Arabic, Azerbaijani, Bengali, 
-				German, Spanish, Finnish, French, Hindi, Indonesian, Khmer, Portuguese, 
-				Russian, Swahili and Chinese. Selecting one of these languages from the <span class="feature">Language</span>
-				menu will turn all menu's and screen messages from the default English 
-				into the chosen language.
-				<span class="tip">
-					Languages such as Chinese will only display correctly if your computer supports the 
-					additional character sets required. If the typeface displays as square 
-					blocks on the screen then your computer does not have the correct font. Refer to your Windows user manual for 
-					details.
-				</span>
+				All the plugins added to frontlineSMS are listed under this sections. This enables the users to easily access the plugins and manage their settings. HTTP Trigger and Sync are loaded to this section by default.
 			</h3>
+
 			<a href="help-menu.htm"><h6>Return to Help main menu</h6></a>
 		</div>
 	</body>
