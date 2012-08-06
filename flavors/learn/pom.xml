@@ -7,7 +7,7 @@
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-dist</artifactId>
 		<version>1.7.0-beta-15-SNAPSHOT</version>
-		<relativePath>./</relativePath>
+		<relativePath>../../</relativePath>
 	</parent>
 	<version>1.0.0-b4-SNAPSHOT</version>
 	<packaging>pom</packaging>

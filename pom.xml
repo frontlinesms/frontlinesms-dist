@@ -45,26 +45,20 @@
 	</properties>
 
 	<build>
-		<sourceDirectory>src/${frontlinesms.flavor}/main/java</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>src/${frontlinesms.flavor}/main/resources</directory>
-			</resource>
-		</resources>
 		<plugins>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<descriptors>
 						<!-- Windows build for install4j -->
-						<descriptor>src/assemble/windows-install4j.xml</descriptor>
+						<descriptor>../../src/assemble/windows-install4j.xml</descriptor>
 
-						<descriptor>src/assemble/distribution.xml</descriptor>
+						<descriptor>../../src/assemble/distribution.xml</descriptor>
 						
 						<!-- Linux builds -->
-						<descriptor>src/assemble/linux_i686-dist.xml</descriptor>
-						<descriptor>src/assemble/linux_ia64-dist.xml</descriptor>
-						<descriptor>src/assemble/linux_x86_64-dist.xml</descriptor>
+						<descriptor>../../src/assemble/linux_i686-dist.xml</descriptor>
+						<descriptor>../../src/assemble/linux_ia64-dist.xml</descriptor>
+						<descriptor>../../src/assemble/linux_x86_64-dist.xml</descriptor>
 					</descriptors>
 				</configuration>
 				<executions>
@@ -90,7 +84,7 @@
 				</executions>
 				<configuration>
 					<executable>${devenv.install4jc}</executable>
-					<configFile>${basedir}/src/assemble/windows.install4j</configFile>
+					<configFile>${basedir}/../../src/assemble/windows.install4j</configFile>
 					<releaseId>${project.version}</releaseId>
 					<attach>true</attach>
 					<skipOnMissingExecutable>true</skipOnMissingExecutable>
@@ -110,9 +104,9 @@
 						<property><name>install4j.windows.launcher.name</name><value>${build.name}</value></property>
 						<property><name>app.icns</name><value>${install4j.app.icns}</value></property>
 						<property><name>install4j.windows.launcher.executable.name</name><value>${build.name}</value></property>
-						<property><name>install4j.windows.launcher.executable.iconFile</name><value>../${frontlinesms.flavor}/assemble/assets/app.ico</value></property>
-						<property><name>install4j.windows.launcher.splashScreen.bitmapFile</name><value>../${frontlinesms.flavor}/assemble/assets/splash.jpg</value></property>
-						<property><name>install4j.windows.launcher.iconImageFiles.file.path</name><value>../${frontlinesms.flavor}/assemble/app.ico</value></property>
+						<property><name>install4j.windows.launcher.executable.iconFile</name><value>${basedir}/src/assemble/assets/app.ico</value></property>
+						<property><name>install4j.windows.launcher.splashScreen.bitmapFile</name><value>${basedir}/src/assemble/assets/splash.jpg</value></property>
+						<property><name>install4j.windows.launcher.iconImageFiles.file.path</name><value>../${basedir}/src/assemble/app.ico</value></property>
 						<property><name>install4j.windows.installDir</name><value>${build.name}</value></property>
 						<property><name>install4j.application.id</name><value>${install4j.application.id}</value></property>
 						<property><name>installer.compress</name><value>${install4j.compress}</value></property>
@@ -192,11 +186,6 @@
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-translation</artifactId>
 			<version>0.0.21</version>
-		</dependency>
-		<dependency>
-			<groupId>net.frontlinesms.plugins</groupId>
-			<artifactId>frontlinesms-plugin-reminders</artifactId>
-			<version>0.1.14</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>

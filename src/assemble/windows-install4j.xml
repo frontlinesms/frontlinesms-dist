@@ -19,26 +19,26 @@
 	<fileSets>
 		<fileSet>
 			<!-- Include the help directory + all contents and subdirs -->
-			<directory>src/assemble/resources/package/help/</directory>
+			<directory>../../src/assemble/resources/package/help/</directory>
 			<outputDirectory>help/</outputDirectory>
 		</fileSet>
 		
 		<fileSet>
 			<!-- Include files specific to this distribution -->
-			<directory>src/${frontlinesms.flavor}/assemble/package/filtered</directory>
+			<directory>src/assemble/package/filtered</directory>
 			<outputDirectory>.</outputDirectory>
 			<filtered>true</filtered>
 		</fileSet>
 		
 		<fileSet>
 			<!-- Include files specific to this distribution -->
-			<directory>src/${frontlinesms.flavor}/assemble/package/unfiltered</directory>
+			<directory>src/assemble/package/unfiltered</directory>
 			<outputDirectory>.</outputDirectory>
 		</fileSet>
 		
 		<fileSet>
 			<!-- Include JNI Libraries for Windows -->
-			<directory>lib/windows</directory>
+			<directory>../../lib/windows</directory>
 			<outputDirectory>jni</outputDirectory>
 			<includes>
 				<include>*.dll</include>
@@ -49,7 +49,7 @@
 		</fileSet>
 
 		<fileSet>
-			<directory>lib/windows</directory>
+			<directory>../../lib/windows</directory>
 			<outputDirectory>.</outputDirectory>
 			<includes>
 				<include>javax.comm.properties</include>
@@ -57,3 +57,4 @@
 		</fileSet>
 	</fileSets>
 </assembly>
+

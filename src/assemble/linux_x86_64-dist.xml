@@ -22,7 +22,7 @@
 			in Maven 2.1 which breaks filtering of fileSets (details: http://jira.codehaus.org/browse/MASSEMBLY-230) -->
 		<file>
 			<!-- Linux/Unix/OSX scripts -->
-			<source>src/assemble/resources/FrontlineSMS.sh</source>
+			<source>../../src/assemble/resources/FrontlineSMS.sh</source>
 			<destName>FrontlineSMS.sh</destName>
 			<filtered>true</filtered>
 		</file>
@@ -31,7 +31,7 @@
 	<fileSets>
 		<fileSet>
 			<!-- Include all the assembly resources... -->
-			<directory>src/assemble/resources</directory>
+			<directory>../../src/assemble/resources</directory>
 			<outputDirectory>/</outputDirectory>
 			<!-- ...but exclude all the resources we have included individually with filtering above -->
 			<excludes>
@@ -43,13 +43,13 @@
 		
 		<fileSet>
 			<!-- Include the help directory + all contents and subdirs -->
-			<directory>src/assemble/resources/package/help/</directory>
+			<directory>../../src/assemble/resources/package/help/</directory>
 			<outputDirectory>help/</outputDirectory>
 		</fileSet>
 		
 		<fileSet>
 			<!-- Include JNI Libraries for Linux -->
-			<directory>lib/linux/x86_64</directory> <!-- TODO make arch version a property injected here -->
+			<directory>../../lib/linux/x86_64</directory> <!-- TODO make arch version a property injected here -->
 			<outputDirectory></outputDirectory>
 			<includes>
 				<include>*.so</include>
