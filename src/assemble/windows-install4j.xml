@@ -25,7 +25,14 @@
 		
 		<fileSet>
 			<!-- Include files specific to this distribution -->
-			<directory>src/assemble/resources/build-specific/${project.artifactId}</directory>
+			<directory>src/${frontlinesms.flavor}/assemble/package/filtered</directory>
+			<outputDirectory>.</outputDirectory>
+			<filtered>true</filtered>
+		</fileSet>
+		
+		<fileSet>
+			<!-- Include files specific to this distribution -->
+			<directory>src/${frontlinesms.flavor}/assemble/package/unfiltered</directory>
 			<outputDirectory>.</outputDirectory>
 		</fileSet>
 		

@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>frontlinesms-credit-dist</artifactId>
+	<name>FrontlineSMS:Credit Desktop build</name>
+	<description>This project allows packaging of FrontlineSMS:Credit desktop application.</description>
+	<parent>
+		<groupId>net.frontlinesms.core</groupId>
+		<artifactId>frontlinesms-dist</artifactId>
+		<version>1.7.0-beta-15-SNAPSHOT</version>
+		<relativePath>./</relativePath>
+	</parent>
+	<version>1.0.0-beta-4-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<scm>
+		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
+	</scm>
+
+	<properties>
+		<github.projectOwner>FrontlineSMS-Credit</github.projectOwner>
+		<github.projectName>frontlinesms-dist</github.projectName>
+
+		<build.name>FrontlineSMS-Credit</build.name>
+		<frontlinesms.flavor>credit</frontlinesms.flavor>
+		<install4j.application.id>1116-0643-5989-7964</install4j.application.id>
+		<install4j.app.icns>resources/core/app.icns</install4j.app.icns>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.frontlinesms.plugins</groupId>
+			<artifactId>frontlinesms-plugin-payment</artifactId>
+			<version>0.2.2</version>
+		</dependency>
+
+		<!-- Payment Services -->
+		<dependency>
+			<groupId>net.frontlinesms.plugins.payment</groupId>
+			<artifactId>safaricom-kenya</artifactId>
+			<version>0.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>net.frontlinesms.plugins.payment</groupId>
+			<artifactId>dummycash</artifactId>
+			<version>0.1.0</version>
+		</dependency>
+	</dependencies>
+</project>

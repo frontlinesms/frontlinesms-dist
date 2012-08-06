@@ -38,9 +38,19 @@
 			changed for different FrontlineSMS falvours so that they do not install
 			on top of one another.  -->
 		<install4j.application.id>1689-4956-5311-2233</install4j.application.id>
+		<frontlinesms.flavor>core</frontlinesms.flavor>
+		<!-- install4j substitutions -->
+		<install4j.app.icns>${basedir}/src/assemble/${frontlinesms.flavor}/assemble/assets/app.icns</install4j.app.icns>
+		<install4j.compress>false</install4j.compress>
 	</properties>
 
 	<build>
+		<sourceDirectory>src/${frontlinesms.flavor}/main/java</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/${frontlinesms.flavor}/main/resources</directory>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
@@ -98,14 +108,14 @@
 							<value>${build.name}</value>
 						</property>
 						<property><name>install4j.windows.launcher.name</name><value>${build.name}</value></property>
-						<property><name>install4j.windows.launcher.icnsFile</name><value>osx-resources/${build.name}.icns</value></property>
+						<property><name>app.icns</name><value>${install4j.app.icns}</value></property>
 						<property><name>install4j.windows.launcher.executable.name</name><value>${build.name}</value></property>
-						<property><name>install4j.windows.launcher.executable.iconFile</name><value>resources/${build.name}.ico</value></property>
-						<property><name>install4j.windows.launcher.splashScreen.bitmapFile</name><value>resources/${build.name}_Splash_Logo.jpg</value></property>
-						<property><name>install4j.windows.launcher.iconImageFiles.file.path</name><value>src/assemble/resources/${build.name}.ico</value></property>
+						<property><name>install4j.windows.launcher.executable.iconFile</name><value>../${frontlinesms.flavor}/assemble/assets/app.ico</value></property>
+						<property><name>install4j.windows.launcher.splashScreen.bitmapFile</name><value>../${frontlinesms.flavor}/assemble/assets/splash.jpg</value></property>
+						<property><name>install4j.windows.launcher.iconImageFiles.file.path</name><value>../${frontlinesms.flavor}/assemble/app.ico</value></property>
 						<property><name>install4j.windows.installDir</name><value>${build.name}</value></property>
 						<property><name>install4j.application.id</name><value>${install4j.application.id}</value></property>
-
+						<property><name>installer.compress</name><value>${install4j.compress}</value></property>
 					</compilerVariables>
 					<verbose>true</verbose>
 				</configuration>
@@ -120,7 +130,7 @@
 				<configuration>
 					<bundleName>FrontlineSMS ${version}</bundleName>
 					<mainClass>net.frontlinesms.DesktopLauncher</mainClass>
-					<iconFile>${basedir}/src/assemble/osx-resources/FrontlineSMS.icns</iconFile>
+					<iconFile>${basedir}/src/assemble/${install4j.app.icns}</iconFile>
 					<jvmVersion>1.5+</jvmVersion>
 					<javaApplicationStub>${basedir}/src/assemble/osx-resources/JavaApplicationStub</javaApplicationStub>
 					<workingDirectory>$JAVAROOT/lib</workingDirectory>
@@ -149,53 +159,6 @@
 						<phase>package</phase>
 						<goals>
 							<goal>bundle</goal>
-						</goals>
-					</execution>
-				</executions>
-			--></plugin>
-			<plugin>
-				<!-- THIS PLUGIN IS PLATFORM-DEPENDENT
-					This will create the FrontlineSMS Windows install package, but will only work
-					if the OS is Windows and Excelsior Jet compiler and packager are installed -->
-				<groupId>net.frontlinesms.build</groupId>
-				<artifactId>jetpackager-maven-plugin</artifactId>
-				<version>0.0.2</version>
-				<configuration>
-					<splashImage>src/assemble/resources/FrontlineSMS_Splash_Logo.jpg</splashImage>
-					<programIcon>src/assemble/resources/FrontlineSMS.ico</programIcon>
-					<javaMainClass>net.frontlinesms.DesktopLauncher</javaMainClass>
-					<programExecutableName>FrontlineSMS</programExecutableName>
-					<programVendor>kiwanja.net</programVendor>
-					<packageContents>
-						<fileSet>
-							<!-- Include the help directory + all contents and subdirs -->
-							<directory>src/assemble/resources/package/</directory>
-							<includes>
-								<include>**</include>
-							</includes>
-						</fileSet>
-						<fileSet>
-							<!-- Include JNI Libraries for Windows -->
-							<directory>lib/windows</directory>
-							<includes>
-								<include>*.dll</include>
-							</includes>
-							<excludes>
-								<exclude>rxtx*.dll</exclude>
-							</excludes>
-						</fileSet>
-					</packageContents>
-					<programFilesHome>kiwanja.net/FrontlineSMS_${version}</programFilesHome>
-					<startMenuProgramFolderRoot>FrontlineSMS</startMenuProgramFolderRoot>
-					<compressionLevel>2</compressionLevel>
-					<!--<doCompile>false</doCompile>-->
-					<!--<doPack>false</doPack>-->
-				</configuration>
-				<!--<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>jetbuild</goal>
 						</goals>
 					</execution>
 				</executions>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="5.0.9" transformSequenceNumber="3">
 	<directoryPresets config="../../" />
-  <application name="${compiler:install4j.windows.application.name}" distributionSourceDir="" applicationId="${compiler:install4j.application.id}" mediaDir="media" mediaFilePattern="${compiler:sys.shortName}_${compiler:sys.platform}_${compiler:sys.version}" compression="9" lzmaCompression="true" pack200Compression="true" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="true" shortName="${compiler:install4j.windows.application.shortName}" publisher="kiwanja.net" publisherWeb="http://www.frontlinesms.com" version="${compiler:project.version}" allPathsRelative="false" backupOnSave="false" autoSave="false" convertDotsToUnderscores="true" macSignature="????" installerName="" javaMinVersion="1.5" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
+  <application name="${compiler:install4j.windows.application.name}" distributionSourceDir="" applicationId="${compiler:install4j.application.id}" mediaDir="media" mediaFilePattern="${compiler:sys.shortName}_${compiler:sys.platform}_${compiler:sys.version}" compression="9" lzmaCompression="${compiler:installer.compress}" pack200Compression="${compiler:installer.compress}" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="true" shortName="${compiler:install4j.windows.application.shortName}" publisher="kiwanja.net" publisherWeb="http://www.frontlinesms.com" version="${compiler:project.version}" allPathsRelative="false" backupOnSave="false" autoSave="false" convertDotsToUnderscores="true" macSignature="????" installerName="" javaMinVersion="1.5" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
     <languages skipLanguageSelection="false" languageSelectionInPrincipalLanguage="false">
       <principalLanguage id="en" customLocalizationFile="" />
       <additionalLanguages />
@@ -26,7 +26,7 @@
     <components />
   </files>
   <launchers>
-    <launcher name="${compiler:install4j.windows.launcher.name}" id="23" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="" icnsFile="${compiler:install4j.windows.launcher.icnsFile}" swtApp="false" fileset="">
+    <launcher name="${compiler:install4j.windows.launcher.name}" id="23" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="" icnsFile="${compiler:app.icns}" swtApp="false" fileset="">
       <executable name="${compiler:install4j.windows.launcher.executable.name}" type="1" iconSet="true" iconFile="${compiler:install4j.windows.launcher.executable.iconFile}" executableDir="" redirectStderr="true" stderrFile="error.log" stderrMode="overwrite" redirectStdout="true" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="false" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false">
         <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" />
       </executable>
@@ -348,7 +348,7 @@
     </applications>
   </installerGui>
   <mediaSets>
-    <windows name="Windows" id="24" customizedId="" mediaFileName="" installDir="${compiler:install4j.windows.installDir}" overridePrincipalLanguage="false" jreBitType="32" runPostProcessor="false" postProcessor="" failOnPostProcessorError="false" useLegacyMediaFileIds="false" legacyMediaFileIds="" includedJRE="windows-x86-1.6.0_29" manualJREEntry="false" bundleType="1" jreURL="" jreFtpURL="" jreShared="false" directDownload="false" installOnlyIfNecessary="false" customInstallBaseDir="" contentFilesType="1" downloadURL="" verifyIntegrity="true">
+    <windows name="Windows" id="24" customizedId="" mediaFileName="" installDir="${compiler:install4j.windows.installDir}" overridePrincipalLanguage="false" jreBitType="32" runPostProcessor="false" postProcessor="" failOnPostProcessorError="false" useLegacyMediaFileIds="false" legacyMediaFileIds="" includedJRE="windows-x86-1.6.0_33" manualJREEntry="false" bundleType="1" jreURL="" jreFtpURL="" jreShared="false" directDownload="false" installOnlyIfNecessary="false" customInstallBaseDir="" contentFilesType="1" downloadURL="" verifyIntegrity="true">
       <excludedLaunchers />
       <excludedBeans />
       <overriddenPrincipalLanguage id="en" customLocalizationFile="" />
