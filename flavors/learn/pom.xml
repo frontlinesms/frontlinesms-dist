@@ -9,7 +9,7 @@
 		<version>1.7.0-beta-17</version>
 		<relativePath>../../</relativePath>
 	</parent>
-	<version>1.0.0-b4</version>
+	<version>1.0.0-b5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
