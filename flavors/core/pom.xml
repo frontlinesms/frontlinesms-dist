@@ -10,6 +10,10 @@
 	<version>1.7.0-beta-17-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
+	<scm>
+		<developerConnection>scm:git:git@github.com:frontlinesms/frontlinesms-dist.git</developerConnection>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
