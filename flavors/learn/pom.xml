@@ -12,6 +12,10 @@
 	<version>1.0.0-b4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<scm>
+		<developerConnection>scm:git:git@github.com:frontlinesms/frontlinesms-dist.git</developerConnection>
+	</scm>
+
 	<properties>
 		<build.name>FrontlineSMS_Learn</build.name>
 		<install4j.application.id>3002-5083-8012-9186</install4j.application.id>
