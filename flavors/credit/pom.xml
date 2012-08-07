@@ -12,10 +12,6 @@
 	<version>1.0.0-beta-4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<scm>
-		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
-	</scm>
-
 	<properties>
 		<github.projectOwner>FrontlineSMS-Credit</github.projectOwner>
 		<github.projectName>frontlinesms-dist</github.projectName>

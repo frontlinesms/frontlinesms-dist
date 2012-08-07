@@ -6,14 +6,14 @@
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-pom-parent</artifactId>
-		<version>1.7.0-beta-15-SNAPSHOT</version>
+		<version>1.7.0-beta-15</version>
 		<relativePath>../pom-parent</relativePath>
 	</parent>
 	<version>1.7.0-beta-15-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
-		<developerConnection>scm:git:git@github.com:${github.projectOwner}/${github.projectName}.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:frontlinesms/frontlinesms-dist.git</developerConnection>
 	</scm>
 
 	<repositories>
