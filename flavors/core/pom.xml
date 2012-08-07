@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-dist</artifactId>
-		<version>1.7.0-beta-15-SNAPSHOT</version>
+		<version>1.7.0-beta-15</version>
 		<relativePath>../../</relativePath>
 	</parent>
 	<version>1.0.0-beta-15-SNAPSHOT</version>
