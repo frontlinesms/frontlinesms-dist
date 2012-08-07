@@ -6,10 +6,10 @@
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-pom-parent</artifactId>
-		<version>1.7.0-beta-16</version>
+		<version>1.7.0-beta-17-SNAPSHOT</version>
 		<relativePath>../pom-parent</relativePath>
 	</parent>
-	<version>1.7.0-beta-16-SNAPSHOT</version>
+	<version>1.7.0-beta-17-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -92,14 +92,14 @@
 						</executions>
 						<configuration>
 							<executable>${devenv.install4jc}</executable>
-							<configFile>${basedir}/../../src/assemble/windows.install4j</configFile>
+							<configFile>../../src/assemble/windows.install4j</configFile>
 							<releaseId>${project.version}</releaseId>
 							<attach>true</attach>
 							<skipOnMissingExecutable>true</skipOnMissingExecutable>
 							<compilerVariables>
 								<property>
 									<name>assembly.dir</name>
-									<value>../../target/${project.artifactId}-${project.version}-windows-install4j</value>
+									<value>${basedir}/target/${project.artifactId}-${project.version}-windows-install4j</value>
 								</property>
 								<property>
 									<name>install4j.windows.application.name</name>
