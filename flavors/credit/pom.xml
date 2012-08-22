@@ -6,10 +6,10 @@
 	<parent>
 		<groupId>net.frontlinesms.core</groupId>
 		<artifactId>frontlinesms-dist</artifactId>
-		<version>1.7.0-beta-18-SNAPSHOT</version>
+		<version>1.7.0-beta-18</version>
 		<relativePath>../../</relativePath>
 	</parent>
-	<version>1.0.0-beta-5-SNAPSHOT</version>
+	<version>1.0.0-beta-5</version>
 	<packaging>jar</packaging>
 
 	<scm>
