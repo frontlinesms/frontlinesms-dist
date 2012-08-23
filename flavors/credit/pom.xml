@@ -37,7 +37,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins.payment</groupId>
 			<artifactId>safaricom-kenya</artifactId>
-			<version>0.1.5</version>
+			<version>0.1.6-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>net.frontlinesms.plugins.payment</groupId>
