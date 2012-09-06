@@ -9,7 +9,7 @@
 		<version>1.7.0-beta-19</version>
 		<relativePath>../../</relativePath>
 	</parent>
-	<version>1.0.0-beta-6-microensure</version>
+	<version>1.0.0-beta-7-microensure-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<scm>
