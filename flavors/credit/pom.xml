@@ -9,7 +9,7 @@
 		<version>1.7.0-beta-19</version>
 		<relativePath>../../</relativePath>
 	</parent>
-	<version>1.0.0-beta-6</version>
+	<version>1.0.0-beta-6-microensure-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<scm>
@@ -20,9 +20,9 @@
 		<github.projectOwner>FrontlineSMS-Credit</github.projectOwner>
 		<github.projectName>frontlinesms-dist</github.projectName>
 
-		<build.name>FrontlineSMS-Credit</build.name>
+		<build.name>FrontlineSMS-Credit-microensure</build.name>
 		<frontlinesms.flavor>credit</frontlinesms.flavor>
-		<install4j.application.id>1116-0643-5989-7964</install4j.application.id>
+		<install4j.application.id>1916-7623-3939-7934</install4j.application.id>
 		<install4j.app.icns>resources/core/app.icns</install4j.app.icns>
 	</properties>
 
@@ -30,7 +30,7 @@
 		<dependency>
 			<groupId>net.frontlinesms.plugins</groupId>
 			<artifactId>frontlinesms-plugin-payment</artifactId>
-			<version>0.2.6</version>
+			<version>0.2.6-microensure</version>
 		</dependency>
 
 		<!-- Payment Services -->
